@@ -12,7 +12,6 @@ export class ApiService {
   apiUrl = 'http://localhost:8080/api'; 
 
   image: any;
-  boxDetails: any;
   apiService: any;
   private panier: any[] = [];
   apiBaseUrl: any;
