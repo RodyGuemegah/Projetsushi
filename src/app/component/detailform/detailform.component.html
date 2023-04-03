@@ -1,0 +1,44 @@
+<p>detailform works!</p>
+<!--div>  
+  
+    <div *ngFor="let boxDetail of boxDetails ">
+        <h2>{{ boxDetail.nom}}</h2>
+        <p>Id:{{boxDetail.Id}}</p>
+        <p>Id:{{boxDetail.image}}</p>
+
+    <p>Saveur: {{ boxDetail.saveurs }}</p>
+    <p>Prix: {{ boxDetail.prix }}</p>
+    <p>Aliments: {{ boxDetails.aliments }}</p>
+    <img [src]="boxDetail.imageSrc" alt="{{ boxDetail.title }}">
+  </div>
+</div>  
+<div *ngIf="!boxDetails">
+  <h2>{{ boxDetails.nom}}</h2>
+  <p>Chargement en cours...</p>
+</div-->
+
+<!--div *ngFor="let boxDetail of boxDetails">
+  
+  <h2>{{ boxDetails.title }}</h2>
+  <p>{{ boxDetails.description }}</p>
+  <img [src]="pathImage + boxDetails.imageUrl" alt="{{ boxDetails.title }}">
+</div-->
+<div class="boxSushi-info" *ngFor="let sushi of sushis; let i = index"></div>
+<div class="card" style="width: 18rem;">
+  <img [src]="boxSushi?.image" class="card-img-top" alt="...">
+  <div class="card-body">
+      <h5 class="card-title"> {{boxSushi?.nom}}</h5>
+      <p class="card-text">{{boxSushi?.saveurs}}</p> 
+      <h6 class="card-text">{{boxSushi?.prix}}
+        <i class="bi bi-currency-dollar"></i>
+      </h6> 
+      <p class="card-text">{{boxSushi?.aliments}}</p> 
+      <a href="" class="btn btn-primary">Ajouter au panier </a>
+    </div>
+  </div>
+
+
+
+
+
+
